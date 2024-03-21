@@ -37,6 +37,7 @@ public class MandN {
 		
 		for(int i = 0; i < n1; i++) {
 			if(!bool[i]) {
+				bool[i] = true;
 				arr[deep] = i + 1;
 				dps(n1, n2, deep + 1);
 				bool[i] = false;
